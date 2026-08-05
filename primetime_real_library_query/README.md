@@ -22,7 +22,9 @@ source query_library.tcl
 
 ## Sample Real Output
 Total cells in library: 866
+
 Flip-flop cells: 209
+
 Scan flip-flop cells: 145
 
 ## Challenges and Debugging
