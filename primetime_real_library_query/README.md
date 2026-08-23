@@ -17,11 +17,14 @@ scan flip-flops is directly relevant to Design-for-Test (DFT) flows.
 
 ## How to Run
 pt_shell
+
 source query_library.tcl
 
 ## Sample Real Output
 Total cells in library: 866
+
 Flip-flop cells: 209
+
 Scan flip-flop cells: 145
 
 ## Challenges and Debugging
