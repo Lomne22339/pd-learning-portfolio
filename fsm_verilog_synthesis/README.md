@@ -15,11 +15,16 @@ through Synopsys Design Compiler against a real TSMC 65nm standard cell
 library (CORE65LPHVT), and compares the real area/timing results.
 
 ## Files
-fsm_5state.v - one-hot encoded FSM (5-bit state)
-tb_fsm_5state.v - testbench, 9-step input sequence exercising most transitions
-fsm_5state_netlist.v - real synthesized gate-level netlist (one-hot version)
-fsm_5state_gray.v - gray encoded FSM (3-bit state), behaviorally identical
-tb_fsm_5state_gray.v - matching testbench, same input sequence
+fsm_5state.v - one-hot encoded FSM (5-bit state),
+
+tb_fsm_5state.v - testbench, 9-step input sequence exercising most transitions,
+
+fsm_5state_netlist.v - real synthesized gate-level netlist (one-hot version),
+
+fsm_5state_gray.v - gray encoded FSM (3-bit state), behaviorally identical,
+
+tb_fsm_5state_gray.v - matching testbench, same input sequence,
+
 fsm_5state_gray_netlist.v - real synthesized gate-level netlist (gray version)
 
 ## How to Run
