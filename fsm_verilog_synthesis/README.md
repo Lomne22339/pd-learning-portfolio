@@ -30,23 +30,35 @@ fsm_5state_gray_netlist.v - real synthesized gate-level netlist (gray version)
 ## How to Run
 Simulation:
 vcs fsm_5state.v tb_fsm_5state.v -o simv_fsm5
+
 ./simv_fsm5
 
 Coverage:
 vcs -cm line fsm_5state.v tb_fsm_5state.v -o simv_fsm5
+
 ./simv_fsm5 -cm line
+
 urg -dir simv_fsm5.vdb
 
 Synthesis (inside dc_shell):
 set target_library "path/to/CORE65LPHVT_nom_1.00V_25C.db"
+
 set link_library "* $target_library"
+
 read_verilog fsm_5state.v
+
 current_design fsm_5state
+
 link
+
 create_clock -name clk -period 10 [get_ports clk]
+
 compile
+
 report_area
+
 report_timing
+
 
 ## Real Results
 
