@@ -1,32 +1,74 @@
 # Physical Design Learning Portfolio
 
-Scripts and exercises built while learning the fundamentals required for an
-entry-level Physical Design (PD) Engineer role: Linux, Bash, and TCL
-scripting, and hands-on use of real Synopsys EDA tools (VCS, Design Compiler,
-ICC2, PrimeTime) with a real TSMC 65nm PDK.
+Hands-on projects, scripts, and exercises documenting my journey toward becoming an entry-level Physical Design Engineer.
+
+This repository covers the fundamental skills used throughout the VLSI and Physical Design flow, including Linux, Bash, TCL, Verilog, synthesis, timing analysis, and hands-on use of Synopsys EDA tools.
+
+## Skills & Tools
+
+**Programming & Scripting:** Linux, Bash, TCL, Verilog
+
+**EDA Tools:** Synopsys VCS, Design Compiler, ICC2, PrimeTime
+
+**Technology Environment:** Hands-on learning with a 65nm standard-cell library/PDK environment.
+
+---
 
 ## Projects
 
-### primetime_real_library_query
-Queries real standard cell data (866 cells, 209 flip-flops, 145 scan
-flip-flops) from an actual 65nm PDK library using Synopsys PrimeTime TCL
-commands (get_lib_cells, collections).
+### [FSM Verilog & Synthesis](./fsm_verilog_synthesis/)
 
-### verilog_keyword_counter
-Two real, individually-graded university exercises: a Bash script that
-correctly counts Verilog keywords while excluding comments and partial-word
-matches, and a TCL script generating composite numbers.
+Implementation of a 5-state Finite State Machine in Verilog using both binary and Gray state encoding. Includes RTL designs, testbenches, synthesized gate-level netlists, and a comparison of the resulting implementations.
 
-### tcl_scripting
-Core TCL fundamentals - variables, lists, dictionaries, procs, file I/O, and
-string/regex handling - the scripting language used to control real PD tools.
+**Focus:** Verilog RTL, FSM design, state encoding, simulation, and synthesis.
 
-### bash_scripting_automation
-A Bash automation pipeline simulating STA report triage: renaming files into
-a clean convention and building a summary table. Uses synthetic practice
-data - see that folder's README for details.
+---
+
+### [PrimeTime Real Library Query](./primetime_real_library_query/)
+
+Queries standard-cell data from a 65nm technology library using Synopsys PrimeTime TCL commands and collection-based queries.
+
+The project explores **866 cells**, including **209 flip-flops** and **145 scan flip-flops**, using commands such as `get_lib_cells` and Synopsys collections.
+
+**Focus:** PrimeTime, TCL, standard-cell libraries, and EDA tool queries.
+
+---
+
+### [Verilog Keyword Counter](./verilog_keyword_counter/)
+
+Two individually graded university exercises:
+
+* A Bash script that counts Verilog keywords while excluding comments and partial-word matches.
+* A TCL script that generates composite numbers.
+
+**Focus:** Bash, TCL, text processing, regular expressions, and scripting logic.
+
+---
+
+### [TCL Scripting](./tcl_scripting/)
+
+Exercises covering the core fundamentals of TCL scripting, including variables, lists, dictionaries, procedures, file I/O, strings, and regular expressions.
+
+TCL is widely used for automation and controlling ASIC and Physical Design tools.
+
+**Focus:** TCL programming and EDA automation fundamentals.
+
+---
+
+### [Bash Scripting Automation](./bash_scripting_automation/)
+
+A Bash automation workflow that simulates timing-report triage by organizing files into a consistent naming convention and generating a structured summary.
+
+This project uses synthetic practice data. See the project README for implementation details.
+
+**Focus:** Linux, Bash scripting, file handling, and automation.
+
+---
 
 ## About
-Built as part of self-directed preparation for entry-level Physical Design
-roles in Europe, alongside university coursework in VLSI Design Flow and
-Memory Design and Testing.
+
+This repository is part of my self-directed preparation for entry-level Physical Design roles, alongside my university coursework in VLSI Design Flow and Memory Design and Testing.
+
+The portfolio is continuously evolving as I progress through the Physical Design flow. Upcoming work will include more hands-on projects involving synthesis, floorplanning, placement, clock tree synthesis, routing, static timing analysis, timing closure, and other stages of the RTL-to-GDSII flow.
+
+**More projects and technical work will be added as I continue learning and building.**
