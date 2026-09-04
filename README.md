@@ -65,6 +65,24 @@ This project uses synthetic practice data. See the project README for implementa
 
 ---
 
+### [Bash & TCL Scripting](Bash_TCL_scripting)
+
+A university coursework assignment implementing the same text-file analysis task using both TCL and Bash.
+
+The scripts accept a text file as a command-line argument and determine:
+
+- Total number of lines
+- Total number of words
+- Character count excluding spaces and line breaks
+- Longest word
+- Shortest word
+
+The TCL implementation uses native TCL commands and logic without calling external UNIX commands, while the Bash implementation uses standard Linux command-line utilities for text processing.
+
+**Focus:** Linux/UNIX, Bash, TCL, command-line arguments, file I/O, text processing, and scripting fundamentals.
+
+---
+
 ## About
 
 This repository is part of my self-directed preparation for entry-level Physical Design roles, alongside my university coursework in VLSI Design Flow and Memory Design and Testing.
