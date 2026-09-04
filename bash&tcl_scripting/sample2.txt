@@ -1,0 +1,4 @@
+TCL scripting is useful.
+A well-designed program can read text files, count words, and analyze data.
+VLSI engineers often automate repetitive tasks using shell-scripts and TCL.
+The shortest word here is I.
