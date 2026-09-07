@@ -16,7 +16,7 @@ This repository covers the fundamental skills used throughout the VLSI and Physi
 
 ## Projects
 
-### [Static Timing Analysis - Real PrimeTime/Design Compiler Experiments](./static_timing_analysis/)
+### [Static Timing Analysis - Real PrimeTime/Design Compiler Experiments](./STA_Timing_Analysis/)
 
 A hands-on Static Timing Analysis project based on real university coursework, involving a 3-flip-flop design with combinational logic between sequential stages.
 
