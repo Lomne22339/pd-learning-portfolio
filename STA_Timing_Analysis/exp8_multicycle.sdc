@@ -1,0 +1,6 @@
+create_clock -name clk -period 10 [get_ports clk]
+set_input_delay -clock clk 2 [get_ports a]
+set_input_delay -clock clk 2 [get_ports b]
+set_output_delay -clock clk 3 [get_ports out]
+set_multicycle_path 4 -setup -from [get_pins out_reg/Q_reg/CP] -to [get_ports out]
+set_multicycle_path 3 -hold -from [get_pins out_reg/Q_reg/CP] -to [get_ports out]
