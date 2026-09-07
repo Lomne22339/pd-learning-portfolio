@@ -16,6 +16,26 @@ This repository covers the fundamental skills used throughout the VLSI and Physi
 
 ## Projects
 
+### [Static Timing Analysis - Real PrimeTime/Design Compiler Experiments](./static_timing_analysis/)
+
+A hands-on Static Timing Analysis project based on real university coursework, involving a 3-flip-flop design with combinational logic between sequential stages.
+
+The design is implemented as a structural Verilog netlist, synthesized against a TSMC 65nm standard-cell library using Synopsys Design Compiler, and analyzed through multiple isolated STA experiments using SDC constraints.
+
+Experiments include:
+
+- Baseline setup and hold timing analysis
+- Clock latency and clock uncertainty
+- Doubled clock frequency
+- Tightened input and output delay constraints
+- Setup and hold multicycle path exceptions
+
+The project also documents real tool-debugging challenges involving session state persistence, SDC constraint contamination, clock-object handling, constraint verification, and technology mapping.
+
+**Focus:** Structural Verilog, Design Compiler, PrimeTime/STA concepts, SDC constraints, setup and hold analysis, clock uncertainty, multicycle paths, timing exceptions, and systematic EDA-tool debugging.
+
+---
+
 ### [FSM Verilog & Synthesis](./fsm_verilog_synthesis/)
 
 Implementation of a 5-state Finite State Machine in Verilog using both binary and Gray state encoding. Includes RTL designs, testbenches, synthesized gate-level netlists, and a comparison of the resulting implementations.
